@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupop Page</title>
+    <link rel="stylesheet" href="./pupop.css">
+</head>
+<body>
+    <div class="Container">
+        <button onclick="openPopup()" type="submit" class="btn">submit</button>
+    <div class="popup" id="popup">
+        <img src="./404-tick.png" alt="">
+        <h2>Thanks You!</h2>
+        <p>Your details has been Successfully Submitted.Thanks!</p>
+        <button onclick="closePopup()" type="submit">ok</button>
+    </div>
+</div>
+<script>
+ let pupop= document.getElementById('popup');
+ function openPopup(){
+    pupop.classList.add('open-Popup');
+ }
+ function closePopup(){
+    pupop.classList.remove('open-Popup');
+ }
+</script>
+</body>
+</html>
